@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catálogo KROCADO Panificadora</title>
+<meta name="description" content="Catálogo completo KROCADO: hamburguesa brioche, pan perro, pan cóctel para eventos, sándwich y pretzel. Pedidos al por mayor para restaurantes y hoteles en Bogotá.">
+<link rel="canonical" href="https://krocado.com/catalogo/">
+<link rel="icon" type="image/jpeg" href="/images/cat-01-krocado.jpg">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="KROCADO Panificadora">
+<meta property="og:title" content="Catálogo KROCADO Panificadora">
+<meta property="og:description" content="Hamburguesa brioche, pan perro, pan cóctel, sándwich y pretzel. Pedidos al por mayor para restaurantes y hoteles en Bogotá.">
+<meta property="og:image" content="https://krocado.com/images/cat-02-brioche-mixto.jpg">
+<meta property="og:url" content="https://krocado.com/catalogo/">
+<meta property="og:locale" content="es_CO">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Catálogo KROCADO Panificadora">
+<meta name="twitter:description" content="Hamburguesa brioche, pan perro, pan cóctel, sándwich y pretzel para tu negocio.">
+<meta name="twitter:image" content="https://krocado.com/images/cat-02-brioche-mixto.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--cream:#FDF6E8;--warm:#F5E6C8;--gold:#C8922A;--gold2:#d9a030;--brown:#2C1A08;--brown2:#3D2010;--white:#FFFDF8;--accent:#E8622A;--text-muted:#7a5c3a;}
+  *{margin:0;padding:0;box-sizing:border-box;} html{scroll-behavior:smooth;}
+  body{background:var(--cream);font-family:'DM Sans',sans-serif;color:var(--brown);overflow-x:hidden;}
+
+  nav{position:fixed;top:0;left:0;right:0;z-index:100;background:rgba(44,26,8,0.97);backdrop-filter:blur(12px);display:flex;align-items:center;justify-content:space-between;padding:12px 32px;border-bottom:1px solid rgba(200,146,42,0.2);}
+  .nav-logo img{height:36px;object-fit:contain;cursor:pointer;}
+  .nav-back{color:rgba(253,246,232,.6);font-size:13px;text-decoration:none;font-weight:500;display:flex;align-items:center;gap:6px;transition:color .2s;}
+  .nav-back:hover{color:var(--gold);}
+  .nav-cta{background:#25D366;color:#fff;padding:9px 20px;border-radius:100px;font-weight:700;font-size:13px;text-decoration:none;display:inline-flex;align-items:center;gap:6px;transition:transform .2s;}
+  .nav-cta:hover{transform:translateY(-1px);background:#1fba58;}
+
+  /* HERO MUY COMPACTO */
+  .hero{background:var(--brown);padding:76px 24px 32px;display:flex;flex-direction:column;align-items:center;text-align:center;position:relative;overflow:hidden;}
+  .hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 30% 50%,rgba(200,146,42,0.12) 0%,transparent 60%);pointer-events:none;}
+  .hero-title{font-family:'Playfair Display',serif;font-size:clamp(32px,7vw,56px);font-weight:900;color:var(--cream);margin-bottom:12px;animation:fadeUp .7s ease both;}
+  .hero-btns{display:flex;gap:12px;flex-wrap:wrap;justify-content:center;margin-bottom:4px;animation:fadeUp .8s ease .1s both;}
+  .btn-gold{background:var(--gold);color:var(--brown);font-weight:700;font-size:14px;padding:11px 24px;border-radius:100px;text-decoration:none;transition:transform .2s,background .2s;}
+  .btn-gold:hover{transform:translateY(-2px);background:var(--gold2);}
+  .btn-wa{background:#25D366;color:#fff;font-weight:700;font-size:14px;padding:11px 24px;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:7px;transition:transform .2s;}
+  .btn-wa:hover{transform:translateY(-2px);background:#1fba58;}
+
+  .section{padding:60px 24px;max-width:1000px;margin:0 auto;}
+  .section-tag{font-size:11px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px;}
+  .divider{width:50px;height:3px;background:var(--gold);border-radius:2px;margin-bottom:16px;}
+  .section-title{font-family:'Playfair Display',serif;font-size:clamp(24px,5vw,38px);font-weight:700;line-height:1.1;color:var(--brown);margin-bottom:32px;}
+
+  .grid{display:grid;gap:20px;}
+  .grid-2{grid-template-columns:repeat(auto-fill,minmax(270px,1fr));}
+  .grid-3{grid-template-columns:repeat(auto-fill,minmax(230px,1fr));}
+
+  .card{background:var(--white);border-radius:20px;overflow:hidden;box-shadow:0 4px 24px rgba(44,26,8,.08);transition:transform .25s,box-shadow .25s;position:relative;}
+  .card:hover{transform:translateY(-6px);box-shadow:0 18px 44px rgba(44,26,8,.14);}
+  .card-img{width:100%;height:210px;object-fit:cover;display:block;}
+  .card-img-sm{height:175px;}
+  .card-body{padding:18px;}
+  .card-name{font-family:'Playfair Display',serif;font-size:20px;font-weight:700;margin-bottom:5px;color:var(--brown);}
+  .card-desc{font-size:13px;color:var(--text-muted);line-height:1.55;margin-bottom:14px;font-weight:300;}
+  .card-btn{background:var(--brown);color:var(--cream);border:none;border-radius:100px;padding:9px 16px;font-size:12px;font-weight:600;cursor:pointer;text-decoration:none;display:inline-flex;align-items:center;gap:5px;transition:background .2s;font-family:'DM Sans',sans-serif;white-space:nowrap;}
+  .card-btn:hover{background:var(--gold);color:var(--brown);}
+  .tag{position:absolute;top:12px;right:12px;font-size:10px;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;padding:4px 10px;border-radius:100px;}
+  .tag-hot{background:var(--accent);color:#fff;} .tag-new{background:var(--gold);color:var(--brown);} .tag-event{background:#5b3ea0;color:#fff;}
+
+  .card-wide{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;}
+  .card-wide .card-img{height:100%;min-height:240px;}
+  .card-wide .card-body{display:flex;flex-direction:column;justify-content:center;padding:32px;}
+  .card-wide .card-name{font-size:26px;}
+
+  .divider-section{background:var(--brown);padding:44px 24px;text-align:center;}
+  .divider-section h2{font-family:'Playfair Display',serif;font-size:clamp(20px,4vw,34px);color:var(--cream);margin-bottom:8px;}
+  .divider-section p{color:rgba(253,246,232,.5);font-size:14px;max-width:400px;margin:0 auto;font-weight:300;line-height:1.7;}
+
+  .cta-wrap{padding:0 24px;margin-bottom:60px;}
+  .cta-banner{background:var(--brown2);border-radius:24px;padding:48px 32px;max-width:960px;margin:0 auto;text-align:center;position:relative;overflow:hidden;}
+  .cta-banner h2{font-family:'Playfair Display',serif;font-size:clamp(22px,5vw,36px);color:var(--cream);margin-bottom:10px;}
+  .cta-banner p{color:rgba(253,246,232,.55);font-size:14px;max-width:420px;margin:0 auto 24px;line-height:1.7;font-weight:300;}
+  .btn-wa-big{background:#25D366;color:#fff;font-weight:700;font-size:15px;padding:16px 34px;border-radius:100px;text-decoration:none;display:inline-flex;align-items:center;gap:9px;transition:transform .2s,background .2s;}
+  .btn-wa-big:hover{transform:translateY(-2px);background:#1fba58;}
+
+  footer{background:var(--brown);color:rgba(253,246,232,.4);text-align:center;padding:28px 24px;font-size:12px;font-weight:300;}
+  footer img{height:30px;margin-bottom:10px;opacity:.65;display:block;margin:0 auto 10px;}
+  footer a{color:var(--gold);text-decoration:none;}
+
+  @keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+  @media(max-width:680px){
+    nav{padding:10px 16px;}
+    .grid-2,.grid-3{grid-template-columns:1fr 1fr;gap:12px;}
+    .card-img{height:140px;} .card-img-sm{height:120px;}
+    .card-body{padding:12px;} .card-name{font-size:15px;} .card-desc{font-size:11.5px;}
+    .card-wide{grid-template-columns:1fr;} .card-wide .card-img{height:200px;}
+    .section{padding:44px 16px;} .cta-banner{padding:32px 18px;}
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="/" class="nav-back">← Inicio</a>
+  <a href="/"><img src="/images/cat-01-krocado.jpg" alt="KROCADO" style="height:36px;object-fit:contain;"></a>
+  <a href="https://wa.me/573125203439?text=Hola!%20Vi%20el%20cat%C3%A1logo%20KROCADO%20y%20quiero%20pedir%20%F0%9F%8D%9E" target="_blank" class="nav-cta">
+    <svg width="13" height="13" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    Pedir ahora
+  </a>
+</nav>
+
+<!-- HERO SOLO TÍTULO CENTRADO -->
+<section class="hero">
+  <h1 class="hero-title">Catálogo</h1>
+  <div class="hero-btns">
+    <a href="#catalogo" class="btn-gold">Ver productos ↓</a>
+    <a href="https://wa.me/573125203439?text=Hola!%20Vi%20el%20cat%C3%A1logo%20y%20quiero%20cotizar%20%F0%9F%8D%9E" target="_blank" class="btn-wa">
+      <svg width="14" height="14" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      Cotizar
+    </a>
+  </div>
+</section>
+
+<!-- HAMBURGUESA BRIOCHE -->
+<section class="section" id="catalogo">
+  <p class="section-tag">Hamburguesa Brioche</p>
+  <div class="divider"></div>
+  <h2 class="section-title">Hamburguesa Brioche</h2>
+  <div class="grid grid-2">
+    <div class="card card-wide">
+      <img loading="lazy" decoding="async" class="card-img" src="/images/cat-02-brioche-mixto.jpg" alt="Brioche Mixto">
+      <div class="card-body">
+        <span class="tag tag-hot">⭐ Más vendido</span>
+        <p class="card-name">Hamburguesa Brioche</p>
+        <p class="card-desc">Suave, esponjoso y con la medida perfecta. Disponible en versión lisa y con sésamo negro. El favorito de restaurantes y negocios de comida rápida.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20hamburguesa%20brioche%20%F0%9F%8D%94" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+    </div>
+    <div class="card">
+      <img loading="lazy" decoding="async" class="card-img" src="/images/cat-03-brioche-liso.jpg" alt="Brioche Liso">
+      <div class="card-body">
+        <p class="card-name">Brioche Liso</p>
+        <p class="card-desc">Clásico y versátil. Corteza brillante, miga suave. Ideal para cualquier hamburguesa.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20brioche%20liso%20%F0%9F%8D%94" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="tag tag-new">Premium</span>
+      <img loading="lazy" decoding="async" class="card-img" src="/images/cat-04-brioche-sesamo-negro.jpg" alt="Brioche Sésamo Negro">
+      <div class="card-body">
+        <p class="card-name">Brioche Sésamo Negro</p>
+        <p class="card-desc">Toque gourmet con sésamo negro. Perfecto para hamburguesas premium y menús especiales.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20brioche%20s%C3%A9samo%20negro%20%F0%9F%8D%94" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider-section">
+  <h2>Diseñado para restaurantes y cafeterías</h2>
+  <p>Pedidos al por mayor con precios especiales. Contáctenos y reciba una cotización personalizada.</p>
+</div>
+
+<!-- PAN PERRO BRIOCHE -->
+<section class="section">
+  <p class="section-tag">Pan Perro Brioche</p>
+  <div class="divider"></div>
+  <h2 class="section-title">Pan Perro Brioche</h2>
+  <div class="grid grid-2">
+    <div class="card card-wide">
+      <img loading="lazy" decoding="async" class="card-img" src="/images/cat-05-pan-perro-krocado-variedad.jpg" alt="Pan Perro KROCADO variedad">
+      <div class="card-body">
+        <p class="card-name">Pan Perro Brioche</p>
+        <p class="card-desc">Liso o con sésamo negro. Textura firme por fuera, esponjosa por dentro.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20pan%20perro%20brioche%20%F0%9F%8C%AD" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+    </div>
+    <div class="card">
+      <img loading="lazy" decoding="async" class="card-img" src="/images/cat-06-pan-perro-liso.jpg" alt="Pan Perro Liso">
+      <div class="card-body">
+        <p class="card-name">Pan Perro Liso</p>
+        <p class="card-desc">El clásico de siempre. Ideal para hotdogs clásicos y gourmet.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20pan%20perro%20liso%20%F0%9F%8C%AD" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CÓCTEL -->
+<section class="section" style="padding-top:0">
+  <p class="section-tag">Para Eventos y Fiestas</p>
+  <div class="divider"></div>
+  <h2 class="section-title">Panes Cóctel</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <span class="tag tag-event">🎉 Eventos</span>
+      <img loading="lazy" decoding="async" class="card-img card-img-sm" src="/images/cat-07-coctel-mini-burger.jpeg" alt="Cóctel Mini Burger">
+      <div class="card-body">
+        <p class="card-name">Cóctel Mini Burger</p>
+        <p class="card-desc">Pequeñas y deliciosas. Perfectas para fiestas y mesas de bocadillos.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20c%C3%B3ctel%20mini%20burger%20%F0%9F%8D%94" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+    </div>
+    <div class="card">
+      <span class="tag tag-event">🎉 Eventos</span>
+      <img loading="lazy" decoding="async" class="card-img card-img-sm" src="/images/cat-08-coctel-colores.jpeg" alt="Cóctel Colores">
+      <div class="card-body">
+        <p class="card-name">Cóctel Colores</p>
+        <p class="card-desc">Mini burgers en panes de colores. Espectaculares para eventos especiales.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20mini%20burger%20colores%20%F0%9F%8D%94" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+</div>
+    <div class="card">
+      <span class="tag tag-event">🎉 Eventos</span>
+      <img loading="lazy" decoding="async" class="card-img card-img-sm" src="/images/cat-12-volovan.jpg" alt="Volován">
+      <div class="card-body">
+        <p class="card-name">Volován</p>
+        <p class="card-desc">Pequeño pastelillo de masa hojaldre, ligero y hueco, con forma de cestillo. Diseñado para rellenarse con preparaciones saladas o dulces — ideal para eventos, pasabocas y catering.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20c%C3%B3ctel%20mini%20Volovan%20%F0%9F%8C%AD" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <span class="tag tag-event">🎉 Eventos</span>
+      <img loading="lazy" decoding="async" class="card-img card-img-sm" src="/images/cat-09-coctel-mini-perro.jpeg" alt="Cóctel Mini Perro">
+      <div class="card-body">
+        <p class="card-name">Cóctel Mini Perro</p>
+        <p class="card-desc">Mini perros para eventos, brunchs y cócteles. Irresistibles y fáciles de servir.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20c%C3%B3ctel%20mini%20perro%20%F0%9F%8C%AD" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<!-- SÁNDWICH -->
+<section class="section" style="padding-top:0">
+  <p class="section-tag">Pan Sándwich</p>
+  <div class="divider"></div>
+  <h2 class="section-title">Pan Sándwich</h2>
+  <div class="grid grid-2">
+    <div class="card card-wide">
+      <img loading="lazy" decoding="async" class="card-img" src="/images/cat-10-pan-sandwich.jpg" alt="Pan Sándwich">
+      <div class="card-body">
+        <p class="card-name">Pan Sándwich</p>
+        <p class="card-desc">Artesanal, con la miga y corteza perfecta. Disponible en diferentes tamaños. Ideal para cafeterías y restaurantes.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20pan%20s%C3%A1ndwich%20%F0%9F%A5%AA" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRETZEL -->
+<section class="section" style="padding-top:0">
+  <p class="section-tag">Pan Pretzel</p>
+  <div class="divider"></div>
+  <h2 class="section-title">Pan Pretzel</h2>
+  <div class="grid grid-2">
+    <div class="card card-wide">
+      <img loading="lazy" decoding="async" class="card-img" src="/images/cat-11-pan-pretzel.jpg" alt="Pan Pretzel">
+      <div class="card-body">
+        <span class="tag tag-new">✨ Nuevo</span>
+        <p class="card-name">Pan Pretzel</p>
+        <p class="card-desc">Corteza brillante y suave por dentro. Perfecto para hamburguesas gourmet.</p>
+        <a href="https://wa.me/573125203439?text=Hola!%20Quiero%20cotizar%20pan%20pretzel%20%F0%9F%A5%A8" target="_blank" class="card-btn">📲 Cotizar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="cta-wrap">
+  <div class="cta-banner">
+    <div style="font-size:40px;margin-bottom:12px">📲</div>
+    <h2>¿Listo para ordenar?</h2>
+    <p>Escríbenos por WhatsApp y te cotizamos en minutos. Atendemos restaurantes, hoteles y cafeterías.</p>
+    <a href="https://wa.me/573125203439?text=Hola!%20Vi%20el%20cat%C3%A1logo%20KROCADO%20y%20quiero%20cotizar%20%F0%9F%8D%9E" target="_blank" class="btn-wa-big">
+      <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> Escribir por WhatsApp
+    </a>
+  </div>
+</div>
+
+<footer>
+  <img loading="lazy" decoding="async" src="/images/cat-01-krocado.jpg" alt="KROCADO">
+  <p><a href="tel:+573125203439">+57 312 520 3439</a> &nbsp;·&nbsp; <a href="mailto:krocadopanaderia@gmail.com">krocadopanaderia@gmail.com</a></p>
+  <p style="margin-top:6px">© 2025 KROCADO Panificadora · <a href="/">← Inicio</a></p>
+</footer>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(a.getAttribute('href'))?.scrollIntoView({behavior:'smooth'});
+    });
+  });
+</script>
+</body>
+</html>
